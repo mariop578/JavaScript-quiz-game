@@ -1,0 +1,45 @@
+body {
+  background-color: #91c4f2;
+}
+
+#start-container {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+
+#quiz {
+  display: grid;
+  place-items: center;
+  height: auto;
+  background-color: #8ca0d7;
+}
+
+#feedback {
+  background-color: #9d79bc;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #a14da0;
+  color: white;
+  border: #7e1f86;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#end-container {
+  display: grid;
+  place-items: center;
+  height: 50vh;
+}
+
+#start-container h1 {
+  color: white;
+  background-color: #7e1f86;
+  padding: 10px;
+  border-radius: 5px;
+}
