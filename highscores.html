@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Highscores</title>
-</head>
-<body>
+    <link rel="stylesheet" href="highscore-styles.css" />
+  </head>
+  <body>
     <header>
-        <h3>JavaScript Quiz Game</h3>
+      <h3>JavaScript Quiz Game</h3>
     </header>
-    <div id="previous-scores"></div>
-    <button id="home-btn"></button>
+    <div id="container">
+      <h3>Top 3 Scores</h3>
+      <div id="previous-scores"></div>
+      <button id="home-btn">Start Again</button>
+    </div>
     <script src="scores.js"></script>
-</body>
+  </body>
 </html>

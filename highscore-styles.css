@@ -1,0 +1,39 @@
+body {
+  background-color: #91c4f2;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+header h3 {
+  color: white;
+  background-color: #7e1f86;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#container {
+  display: grid;
+  place-items: center;
+}
+
+#previous-scores li {
+  list-style: none;
+  padding: 10px;
+}
+
+button {
+  background-color: #a14da0;
+  color: white;
+  border: #7e1f86;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#home-btn {
+  display: flex;
+  justify-self: center;
+}

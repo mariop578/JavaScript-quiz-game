@@ -2,13 +2,14 @@ const backButton = document.getElementById("home-btn");
 backButton.addEventListener("click", goHome);
 
 function displayScores() {
+  //   // Filter for top 3 results and double results
   const userData = JSON.parse(localStorage.getItem("usrscores"));
-  userData.sort((a, b) => b.score - a.score);
-  console.log(userData);
+  const sortedScores = userData.sort((a, b) => b.score - a.score);
+  const topThree = sortedScores.slice(0, 3);
   const scoresDiv = document.getElementById("previous-scores");
   const scoresUl = document.createElement("ul");
   scoresDiv.appendChild(scoresUl);
-  userData.forEach((score) => {
+  topThree.forEach((score) => {
     const scoresEl = document.createElement("li");
     const info = score.initials + "," + score.score;
     scoresEl.textContent = info;
